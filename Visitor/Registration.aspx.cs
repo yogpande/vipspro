@@ -69,7 +69,7 @@ public partial class Visitor_Registration : System.Web.UI.Page
                     r.addr = txtadd.Text;
                     r.sid = Convert.ToInt16(drpState.SelectedItem.Value);
                     r.cid = Convert.ToInt16(drpCity.SelectedItem.Value);
-                    r.pic = "~/UImages/" + Guid.NewGuid() + FileUpload1.PostedFile.FileName;
+                    r.pic = "../UImages/" + Guid.NewGuid() + FileUpload1.PostedFile.FileName;
                     FileUpload1.SaveAs(Server.MapPath(r.pic));
                     u.AddUsers(r);
                     lbl.Text = "You are successfully registered with us...";
