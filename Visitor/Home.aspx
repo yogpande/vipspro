@@ -71,7 +71,7 @@
                             <br />
                             <div>
                                 <span>
-                                    <a href="Registration.aspx" style="color: yellowgreen; font-size: 18px; font-weight: 400;">Register here to Apply Jobs!</a></span>
+                                    <a href="visitor/Registration.aspx" style="color: yellowgreen; font-size: 18px; font-weight: 400;">Register here to Apply Jobs!</a></span>
                             </div>
 
 
