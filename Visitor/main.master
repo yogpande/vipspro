@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="main.master.cs" Inherits="Visitor_main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Vip`sPro</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css' />
+    <!--slider-->
+    <link href="../css/slider.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#slider').nivoSlider();
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="header">
+            <div class="header-top">
+                <div class="wrap">
+                    <div class="top-nav">
+                        <ul>
+                            <li class="active"><a href="Home.aspx">Home</a></li>
+                          <%--  <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>--%>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="wrap">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="../images/logo.png" alt="" /></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!------ Slider ------------>
+        <div class="slider">
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="../images/banner2.jpg" alt="" width="300" height="300" />
+                    <img src="../images/banner1.jpg" alt="" width="300" height="300" />
+                    <img src="../images/banner3.jpg" alt="" width="300" height="300" />
+                    <img src="../images/banner4.jpg" alt="" width="300" height="300" />
+                    <img src="../images/banner5.jpg" alt="" width="300" height="300" />
+                </div>
+            </div>
+        </div>
+        <!------End Slider ------------>
+        <div class="content-top">
+            <div class="wrap">
+                <h1 style="color: yellowgreen; font-size: 30px; font-weight: 300; text-align: center;">Welcome Guest...</h1>
+
+                <p style="text-align: end; font-size: 22px;">
+                    <iframe src="http://free.timeanddate.com/clock/i3w1vyjj/n1577/tlin/fn6/fc008cc4/tct/pct/ftb/tt0/tm1" frameborder="0" width="239" height="22" allowtransparency="true"></iframe>
+                </p>
+            </div>
+        </div>
+    
+
+        <div class="middle-bottom">
+            <div class="wrap">
+                <div class="section group example">
+                    <div class="col_1_of_2 span_1_of_2">
+
+                        <div>
+                            <asp:ContentPlaceHolder ID="left" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+
+                    </div>
+                    <div class="col_1_of_2 span_1_of_2">
+                        <asp:ContentPlaceHolder ID="right" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-bottom">
+            <div class="wrap">
+                <div class="middle-content">
+                    <h2>Rules & Process</h2>
+                    <hr class="hr1">
+                    <br>
+                    <hr class="hr2">
+                </div>
+                <div class="section group example">
+                    <asp:ContentPlaceHolder ID="process" runat="server"></asp:ContentPlaceHolder>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="wrap">
+                <div class="copy">
+                    <p>© 2015-2016 All rights Reserved | Design by <a href="#">Yug Webs Pvt. Ltd.</a></p>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

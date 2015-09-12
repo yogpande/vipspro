@@ -1,0 +1,125 @@
+﻿
+
+        .menus {
+            width: 100%;
+            padding: 10px;
+            height: auto;
+           background-color:#d5c8c8;
+            color: white;
+            text-align:center;
+            font-weight:bold;
+            font-size: 14px;
+            border-radius:15%;
+        }
+        .menus1 {
+           color:#000;
+           display: block;
+           letter-spacing:1px;
+           text-transform:uppercase;
+           font-size: 0.8em;
+            text-align:center;
+            font-family: 'Roboto', sans-serif;
+        }
+        .menus1:hover {
+            color:rgb(95, 148, 21);
+            text-align:center;
+            transition:ease 0.2s;
+        }
+.img {
+    padding:2%;
+   
+    border-radius:5%;
+    transition:all ease-in-out 0.2s;
+}
+  .img:hover{
+     border-radius:15%; box-shadow:0 0 10px rgba(0,0,0,0.5);
+     background-color:#7CCE09;
+  }
+
+   body
+        {
+            font: 18px verdana;
+        }
+         
+        .myGridStyle
+        {
+            border-collapse:collapse;
+             width:100%;
+             height:auto;
+             text-align:center;
+             vertical-align:middle;
+        }
+         
+        .myGridStyle tr th
+        {
+            padding: 10px;
+            color: white;
+            border: 1px solid black;
+            background-color:#A4DE54;
+        }
+         
+
+        .myGridStyle td a
+        {
+           color:#A4DE54;
+        }
+
+         .myGridStyle td a:hover
+        {
+           color:black;
+        }
+.myGridStyle-in tr {
+    border:solid 1px #000;
+}
+         
+        .myGridStyle td
+        {
+            border:1px solid black;
+            padding: 8px;
+            text-align:center;
+             vertical-align:middle;
+        }
+         
+        .myGridStyle tr:last-child td
+        {
+        }
+        .paging
+        {
+        }
+         
+        .paging a
+        {
+            background-color: #00C157;
+            padding: 5px 7px;
+            text-decoration: none;
+            border: 1px solid #00C157;
+        }
+         
+        .paging a:hover
+        {
+            background-color: #E1FFEF;
+            color: #00C157;
+            border: 1px solid #00C157;
+        }
+         
+        .paging span
+        {
+            background-color: #E1FFEF;
+            padding: 5px 7px;
+            color: #00C157;
+            border: 1px solid #00C157;
+        }
+         
+        tr.paging
+        {
+            background: none !important;
+        }
+         
+        tr.paging tr
+        {
+            background: none !important;
+        }
+        tr.paging td
+        {
+            border: none;
+        }

@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admaster.master.cs" Inherits="Admin_admaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Comfort 4U</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css' />
+    <!--slider-->
+    <link href="../css/slider.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="header">
+            <div class="header-top">
+                <div class="wrap">
+                    <div class="top-nav">
+                        <ul>
+                            <li class="active"><a href="AdHome.aspx">Home</a></li>
+                         
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="wrap">
+                    <div class="logo">
+                        <a href="adhome.aspx">
+                            <img src="../images/logo.png" alt=""></a>
+                    </div>
+                    <div class="header-right">
+                        <ul class="follow_icon">
+                            <li><a href="#">
+                                <img src="../images/fb.png" alt=""></a></li>
+                            <li><a href="#">
+                                <img src="../images/rss.png" alt=""></a></li>
+                            <li><a href="#">
+                                <img src="../images/tw.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+        <div class="content-top">
+            <div class="wrap">
+                <div style="width: 100%; height: auto; margin-left: -4%;">
+
+                    <div style="width: 19%; height: 500px; float: left;">
+                        <asp:ContentPlaceHolder ID="menus" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+
+                  
+                            <div style="width: 75%; margin-left: 5%; height: auto; float: left;">
+                                <asp:ContentPlaceHolder ID="data" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                      
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <div class="wrap">
+                <div class="copy">
+                    <p>© 2015-2016 All rights Reserved | Design by <a href="#">Yug Webs Pvt. Ltd.</a></p>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
